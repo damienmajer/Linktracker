@@ -1,0 +1,1 @@
+<?php echo '<p>Link has been reset.</p><p><a href="'.BASE.AMP.'C=addons_modules'.AMP.'M=show_module_cp'.AMP.'module=linktracker'.AMP.'method=index">Back to links</a></p>'; ?>
