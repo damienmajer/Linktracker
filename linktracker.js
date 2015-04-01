@@ -63,7 +63,7 @@ function recordClick(e)
 	if (source.nodeType == 3)
 		source = source.parentNode;
 		
-	var id, target, URL, label
+	var id, target, URL, label;
 	
 	if( source.tagName == "IMG" )
 	{
@@ -76,7 +76,7 @@ function recordClick(e)
 	}else{
 		id = source.getAttribute('id');
 		target = source.getAttribute('href');		
-		label = escape(source.childNodes[0].nodeValue);
+		label = source.getAttribute('rel');
 	}
 	url = document.location.href;
 	//---------------------------------
