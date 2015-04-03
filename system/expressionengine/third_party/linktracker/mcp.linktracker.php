@@ -69,7 +69,7 @@ class Linktracker_mcp {
     
     public function index()
     {              
-        $this->EE->cp->set_variable('cp_page_title', $this->EE->lang->line('linktracker_module_name'));
+        $this->EE->view->cp_page_title = $this->EE->lang->line('linktracker_module_name');
 
 		$vars = array(); $clicks = array(); $label = array();
 
@@ -105,7 +105,7 @@ class Linktracker_mcp {
 	
 	function reset() {
 
-		$this->EE->cp->set_variable('cp_page_title', $this->EE->lang->line('linktracker_reset'));
+		$this->EE->view->cp_page_title = $this->EE->lang->line('linktracker_reset');
 	 	$this->EE->cp->set_breadcrumb($this->base, $this->EE->lang->line('linktracker_module_name'));
 	 	
  		$id = $this->EE->input->get('link_id');
@@ -125,7 +125,7 @@ class Linktracker_mcp {
 	 	
 	 	$id = $this->EE->input->get('link_id');
 
-	 	$this->EE->cp->set_variable('cp_page_title', $this->EE->lang->line('linktracker_link_detail'));
+	 	$this->EE->view->cp_page_title = $this->EE->lang->line('linktracker_link_detail');
 	 	$this->EE->cp->set_breadcrumb($this->base, $this->EE->lang->line('linktracker_module_name'));
 
     	$vars = array(); $clicks = array();
