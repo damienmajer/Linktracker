@@ -2,7 +2,7 @@
 
 * Author: [Damien Majer](http://www.damienmajer.com/)
 
-## Version 1.0
+## Version 1.1
 
 This is an EE2 port of Oliver Heine’s EE1 AJAX Linktracker.
 
